@@ -1,12 +1,10 @@
-import { Header, Footer } from "./components/index"
-import { Home } from './pages/index'
+import { Home } from './pages/pages'
+import './App.scss'
 
 function App() {
   return (
     <>
-      <Header/>
       <Home/>
-      <Footer/>
     </>
   );
 }
