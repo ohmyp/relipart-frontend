@@ -1,0 +1,6 @@
+@import "../../index.scss";
+
+.header{
+    color: $orange;
+    @include title-font;
+}

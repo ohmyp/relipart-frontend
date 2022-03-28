@@ -1,0 +1,6 @@
+@import "../../index.scss";
+
+.footer{
+    color: $blue;
+    @include subtitle-font;
+}
