@@ -3,6 +3,7 @@
 
 .btn{
   @include button_font;
+  cursor: pointer;
   color: $blue;
   background: $orange;
   border: none;
@@ -13,4 +14,13 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   padding: 0 30px;
+  margin: 10px 0;
+  transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+}
+.btn:hover{
+  opacity: 0.6;
 }

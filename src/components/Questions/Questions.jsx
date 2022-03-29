@@ -1,6 +1,6 @@
 import './Questions.scss'
 import React from 'react';
-
+import Button from '../Button/Button'
 const Questions = () => {
   return (
     <div className='questions__outline'>
@@ -11,6 +11,7 @@ const Questions = () => {
         <p className='questions__text'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.
         </p>
+        <Button>Связаться</Button>
       </section>
     </div>
   );

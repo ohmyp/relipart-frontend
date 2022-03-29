@@ -2,9 +2,8 @@
 @import './fonts.scss';
 
 @mixin title-font {
-  font-family: 'Tecla', Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Tecla Bold', Helvetica, sans-serif;
+  font-style: bold;
   font-size: 50px;
   line-height: 54px;
   margin: 10px 0 0 0;
@@ -34,10 +33,19 @@
 @mixin button-font{
   font-family: 'Tecla Bold', Helvetica, sans-serif;;
   font-style: bold;
-  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+}
+
+@mixin text-bold{
+  font-family: 'Tecla Bold', Helvetica, sans-serif;;
+  font-style: bold;
+}
+
+@mixin text-normal{
+  font-family: 'Tecla', Helvetica, sans-serif;;
+  font-style: normal;
 }
 
 @mixin max-width {

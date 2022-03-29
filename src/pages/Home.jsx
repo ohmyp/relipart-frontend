@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer, Services, Questions, Objects, Partners, CallToAction, MainPicture, Button } from '../components/components'
+import { Header, Footer, Services, Questions, Objects, Partners, CallToAction, MainPicture } from '../components/components'
 const Home = () => {
 
 
@@ -12,7 +12,6 @@ const Home = () => {
       <Objects></Objects>
       <Partners></Partners>
       <CallToAction></CallToAction>
-      <Button>Связаться</Button>
       <Footer/>
     </>
   );
