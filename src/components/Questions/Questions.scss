@@ -1,0 +1,24 @@
+@import "../../index.scss";
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.questions{
+    @include max_width;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.questions__subtitle{
+    @include subtitle_font;
+}
+.questions__title{
+    @include title_font;
+}
+.questions__text{
+    @include text_font;
+    
+}
+.questions__outline{
+    border-top: 24px solid $orange;
+    border-bottom: 24px solid $orange;
+}

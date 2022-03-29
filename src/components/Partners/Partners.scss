@@ -1,0 +1,19 @@
+@import "../../index.scss";
+@import '../../vendor/mixins.scss';
+
+
+.partners{
+    @include max_width;
+    text-align: center;
+    margin: 0 auto;
+}
+.partners__subtitle{
+    @include subtitle_font;
+}
+.partners__title{
+    @include title_font;
+}
+.partners__images-image{
+    height: 200px;
+    margin: 15px 35px;
+}
