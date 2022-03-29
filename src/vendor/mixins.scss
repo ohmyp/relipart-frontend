@@ -1,4 +1,6 @@
 @import '../App.scss';
+@import './fonts.scss';
+
 @mixin title-font {
   font-family: 'Tecla', Helvetica, sans-serif;
   font-style: normal;
@@ -23,10 +25,17 @@
   line-height: 29px;
 }
 
+@mixin button-font{
+  font-family: 'Tecla Bold', Helvetica, sans-serif;;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
 @mixin max-width {
-  @media (max-width: 1440px) {
-    max-width: 1024px;
-  }
+  max-width: 1024px;
   
   @media (max-width: 1024px) {
     max-width: 768px;

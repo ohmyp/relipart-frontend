@@ -1,0 +1,16 @@
+@import "../../index.scss";
+@import '../../vendor/mixins.scss';
+
+.btn{
+  @include button_font;
+  color: $blue;
+  background: $orange;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 0 30px;
+}
