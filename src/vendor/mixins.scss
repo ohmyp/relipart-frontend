@@ -5,14 +5,18 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 54px;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 @mixin subtitle-font {
   font-family: 'Tecla', Helvetica, sans-serif;;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 49px;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 @mixin text-font {
@@ -21,6 +25,8 @@
   font-weight: 400;
   font-size: 21px;
   line-height: 29px;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 @mixin max-width {
