@@ -1,0 +1,26 @@
+@import '../../vendor/mixins.scss';
+.mainPicture{
+  position: relative;
+}
+
+.mainPicture__logo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 300px;
+}
+
+.mainPicture__image{
+  width: 100%;
+}
+
+.mainPicture__title{
+  @include text-bold;
+  margin: 0;
+  font-size: 50pt;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  color: white;
+}

@@ -6,6 +6,7 @@
     @include max_width;
     text-align: center;
     margin: 0 auto;
+    padding: 60px 0;
 }
 .partners__subtitle{
     @include subtitle_font;

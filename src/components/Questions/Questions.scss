@@ -2,11 +2,14 @@
 @import '../../vendor/mixins.scss';
 @import '../../vendor/constants.scss';
 
+.questions__outline{
+    margin: 60px 0;
+}
 .questions{
     @include max_width;
     text-align: center;
     margin: 0 auto;
-    
+    padding: 30px 0
 }
 .questions__subtitle{
     @include subtitle_font;
@@ -15,8 +18,7 @@
     @include title_font;
 }
 .questions__text{
-    @include text_font;
-    
+    @include text_font;   
 }
 .questions__outline{
     border-top: 24px solid $orange;
