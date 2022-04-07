@@ -1,0 +1,37 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.news{
+  margin-top: 70px;
+  width: 100%;
+}
+
+.news__title{
+  @include title-font;
+  position: relative;
+  margin: 20px auto;
+  width: 1024px;
+  color: $orange;
+}
+
+.news__title::after{
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width:  220px;
+  height: 6px;
+  border-bottom: 6px solid $blue;
+  top: 20px;
+  left: 250px;
+}
+
+.news__button{
+  display: block;
+  width: 90px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  margin: 20px auto;
+}

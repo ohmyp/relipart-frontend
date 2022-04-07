@@ -1,0 +1,47 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.news-card {
+  width: 100%;
+  transition: background-color 1s;
+}
+
+.news-card:hover{
+  background-color: $orange;
+}
+
+.news-card:hover .news-card__container{
+  color: white;
+}
+
+.news-card__container {
+  padding: 30px 0;
+  margin: 0 auto;
+  display: flex;
+  width: 1024px;
+  color: $blue;
+  transition: color 0.5s;
+}
+
+.news-card__info-container {
+  margin-left: 40px;
+}
+
+.news-card__date {
+  @include subtitle-font;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.news-card__title {
+  @include title-font;
+  margin: 0;
+  font-size: 40px;
+  line-height: 43px;
+}
+.news-card__subtitle {
+  @include subtitle-font;
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: 100;
+}
