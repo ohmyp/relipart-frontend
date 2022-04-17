@@ -4,6 +4,7 @@
 .news-card {
   width: 100%;
   transition: background-color 1s;
+  cursor: pointer;
 }
 
 .news-card:hover{
@@ -25,6 +26,7 @@
 
 .news-card__info-container {
   margin-left: 40px;
+  width: 70%;
 }
 
 .news-card__date {
@@ -36,12 +38,14 @@
 .news-card__title {
   @include title-font;
   margin: 0;
+  text-align: center;
   font-size: 40px;
   line-height: 43px;
 }
 .news-card__subtitle {
   @include subtitle-font;
   font-size: 25px;
+  text-align: center;
   line-height: 27px;
   font-weight: 100;
 }
