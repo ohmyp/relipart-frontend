@@ -26,8 +26,8 @@
 }
 
 .news__button{
-  display: block;
-  width: 90px;
+  cursor: pointer;
+  display: block; 
   padding: 0;
   border: none;
   font: inherit;
@@ -35,3 +35,8 @@
   background-color: transparent;
   margin: 20px auto;
 }
+
+.news__button_image{
+  width: 60px;
+}
+
