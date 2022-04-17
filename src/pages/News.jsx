@@ -26,7 +26,6 @@ const News = () => {
   function openNewsPopup (post){
     SetIsNewsPopupOpen(true)
     setSelectedPost(post)
-    console.log('клик 3')
   }
 
   function closeAllPopups () {

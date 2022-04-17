@@ -5,7 +5,6 @@ import React from "react";
 const NewsCard = ({ post, handlePopupOpen }) => {
   function clickOnPost(){
     handlePopupOpen(post)
-    console.log('клик 1')
   }
   return (
     <div className="news-card" onClick={clickOnPost}>
