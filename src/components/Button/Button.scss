@@ -4,7 +4,7 @@
 .button{
   @include button_font;
   cursor: pointer;
-  color: $blue;
+  color: white;
   background: $orange;
   border: none;
   height: 50px;

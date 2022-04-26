@@ -2,6 +2,9 @@ import './Objects.scss'
 import React from 'react';
 import object1Path from '../../static/objects_images/1.png'
 const Objects = () => {
+    //TODO
+    // В  <p className="object__info-text"> вставить название объекта
+    // по клику будет попап как в новостях с описанием и фотками до/после
   return (
     <section className="objects">
         <h2 className="objects__title">Наши объекты</h2>
