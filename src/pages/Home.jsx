@@ -5,14 +5,14 @@ const Home = () => {
 
   return (
     <>
-      <Header/>
-      <MainPicture></MainPicture>
-      <Services></Services>  
-      <Questions></Questions>    
-      <Objects></Objects>
-      <Partners></Partners>
-      <CallToAction></CallToAction>
-      <Footer/>
+      <Header />
+      <MainPicture />
+      <Services />
+      <Questions />
+      <Objects />
+      <Partners />
+      <CallToAction />
+      <Footer />
     </>
   );
 }

@@ -8,7 +8,7 @@
   color: $orange;
   background: $blue;
   padding: 5px 0;
-  z-index: 5;
+  z-index: 10000;
 }
 
 .header__logo {
@@ -27,7 +27,7 @@
 }
 
 .header__links-link:not(:first-child) a {
-  border-bottom: 0px solid $orange;
+  border-bottom: 0 solid $orange;
   text-decoration: none;
   color: white;
   padding: 6px 0;
