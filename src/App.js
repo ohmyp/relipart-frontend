@@ -1,4 +1,4 @@
-import { Home, News, ServicesPage } from './pages/pages'
+import { Home, News, ServicesPage, AboutUs } from './pages/pages'
 import { Route } from 'react-router-dom'
 import './App.scss'
 
@@ -15,7 +15,9 @@ function App() {
       <Route path="/services">
         <ServicesPage/>
       </Route>
-     
+      <Route path="/aboutus">
+        <AboutUs/>
+      </Route>
     </>
   );
 }

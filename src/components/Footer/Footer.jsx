@@ -1,7 +1,8 @@
 import './Footer.scss';
-import mailPath from '../../static/icons/mail.svg'
-import zenPath from '../../static/icons/zen.svg'
-import phonePath from '../../static/icons/phone.svg'
+import mailPath from '../../static/icons/mail-icon.svg'
+import zenPath from '../../static/icons/zen-icon.svg'
+import facebookPath from '../../static/icons/facebook-icon.svg'
+import phonePath from '../../static/icons/phone-icon.svg'
 
 
 const Footer = () => {

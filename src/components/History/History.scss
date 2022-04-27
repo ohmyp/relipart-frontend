@@ -1,0 +1,27 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.history{
+  @include max-width;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  display: flex;
+  background-image: url(../../static/beautifulest-picture-in-the-world.png);
+  background-position: center;
+  background-size: cover;
+
+  &__left-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__year{
+    @include title-font;
+    font-size: 120px;
+    line-height: 140px;
+    color: $blue;
+  }
+}
