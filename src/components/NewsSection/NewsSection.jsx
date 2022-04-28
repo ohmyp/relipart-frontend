@@ -1,10 +1,10 @@
 import "./NewsSection.scss";
 import React from "react";
-import { NewsCard } from "../components";
+import { NewsCard, Loading } from "../components";
 
 import arrowPath from "../../static/arrow.svg";
 
-const News = ({ posts, handlePopup }) => {
+const News = ({ posts, handlePopup, isLoading }) => {
   const [currentPost, setCurrentPost] = React.useState(6);
 
   function handleNumberOfposts() {
@@ -18,7 +18,7 @@ const News = ({ posts, handlePopup }) => {
   return (
     <section className="news">
       <h2 className="news__title">Новости</h2>
-      {posts.map((post) => {
+      {isLoading ? <Loading/> : posts.map((post) => {
         return post.id < currentPost ? (
           <NewsCard key={post.id} post={post} handlePopupOpen={handlePopupOpen}/>
         ) : (

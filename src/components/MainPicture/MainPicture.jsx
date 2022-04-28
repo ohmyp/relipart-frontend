@@ -1,6 +1,6 @@
 import './MainPicture.scss'
 import mainPicture_path from '../../static/main_picture.png'
-import bigLogo_path from '../../static/big_logo.png'
+import bigLogo_path from '../../static/big_logo.svg'
 const MainPicture = () => {
   return (
     <section className='mainPicture'>
