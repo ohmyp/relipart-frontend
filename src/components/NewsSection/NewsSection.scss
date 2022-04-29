@@ -1,42 +1,48 @@
 @import "../../index.scss";
 @import "../../vendor/mixins.scss";
 
-.news{
-  margin-top: 70px;
+.news-section{
+  @include max-width;
+  margin: 70px auto 0 auto;
   width: 100%;
-}
 
-.news__title{
-  @include title-font;
-  position: relative;
-  margin: 20px auto;
-  width: 1024px;
-  color: $orange;
-}
+  &__title{
+    @include title-font;
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    color: $orange;
+  }
+  
+  &__title::after{
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width:  220px;
+    height: 6px;
+    border-bottom: 6px solid $blue;
+    top: 20px;
+    left: 250px;
+  }
+  
+  &__button{
+    cursor: pointer;
+    display: block; 
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    margin: 20px auto;
 
-.news__title::after{
-  position: absolute;
-  content: "";
-  z-index: 2;
-  width:  220px;
-  height: 6px;
-  border-bottom: 6px solid $blue;
-  top: 20px;
-  left: 250px;
-}
-
-.news__button{
-  cursor: pointer;
-  display: block; 
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  margin: 20px auto;
-}
-
-.news__button_image{
-  width: 60px;
+    &:disabled{
+      opacity: 0;
+      cursor: default;
+    }
+  }
+  
+  &__button_image{
+    width: 60px;
+  }
 }
 

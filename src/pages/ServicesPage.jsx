@@ -5,6 +5,7 @@ const ServicesPage = () => {
 
   return (
     <>
+     <h2 className="slider__title">Наши услуги</h2>
       <Header />
       <Slider />
       <Footer />

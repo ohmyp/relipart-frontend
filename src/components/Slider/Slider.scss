@@ -2,16 +2,16 @@
 @import "../../vendor/mixins.scss";
 
 .slider{
-  max-width: 1024px;
-  margin: 70px auto 0 auto;
+  @include max-width;
+  margin: 0 auto 0 auto;
 }
 
 .slider__title{
-  
   @include title-font;
+  @include max-width;
   position: relative;
-  margin: 20px auto;
-  width: 1024px;
+  margin: 90px auto 20px auto;
+  width: 100%;
   color: $orange;
 }
 
@@ -29,8 +29,8 @@
 .slider-card {
   position: relative;
   margin-top: 50px;
-  width: 800px;
-  height: 500px;
+  width: calc(100%*0.781);
+  height: calc(100%*0.488);
   margin: auto;
 }
 

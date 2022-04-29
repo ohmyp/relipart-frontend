@@ -9,6 +9,9 @@ const News = ({ posts, handlePopup, isLoading }) => {
 
   function handleNumberOfposts() {
     setCurrentPost(currentPost + 4);
+    if( currentPost + 4 >= posts.length ){
+      document.querySelector('.news-section__button').disabled=true;
+    }
   }
 
   function handlePopupOpen (post){
@@ -16,8 +19,8 @@ const News = ({ posts, handlePopup, isLoading }) => {
   }
 
   return (
-    <section className="news">
-      <h2 className="news__title">Новости</h2>
+    <section className="news-section">
+      <h2 className="news-section__title">Новости</h2>
       {isLoading ? <Loading/> : posts.map((post) => {
         return post.id < currentPost ? (
           <NewsCard key={post.id} post={post} handlePopupOpen={handlePopupOpen}/>
@@ -25,9 +28,9 @@ const News = ({ posts, handlePopup, isLoading }) => {
           ""
         );
       })}
-      <button className="news__button">
+      <button className="news-section__button">
         <img
-          className="news__button_image"
+          className="news-section__button_image"
           src={arrowPath}
           onClick={handleNumberOfposts}
         />

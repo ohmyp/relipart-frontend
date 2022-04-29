@@ -21,7 +21,6 @@ import "swiper/css/pagination";
 const Slider = ({}) => {
   return (
     <section className="slider">
-      <h2 className="slider__title">Наши услуги</h2>
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
