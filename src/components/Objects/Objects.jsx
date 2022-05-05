@@ -17,19 +17,13 @@ const Objects = ({handlePopup}) => {
         <div className="objects__objects-top object">
           <div className="object__info" onClick={openPopup}>
             <p className="object__info-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis
-              tortor vitae pellentesque egestas quam pulvinar. Pellentesque
-              porttitor velit sit pellentesque. Suspendisse donec pretium id
-              dignissim.
+              Стенка канала Петровского дока, участок №3, 2019 г.
             </p>
             <img id='0' className="object-image" src={embankmentPath} alt="" />
           </div>
           <div className="object__info" onClick={openPopup}>
             <p className="object__info-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis
-              tortor vitae pellentesque egestas quam pulvinar. Pellentesque
-              porttitor velit sit pellentesque. Suspendisse donec pretium id
-              dignissim.
+            Дворовая территория дома №37Б литер А по ул. Профессора Попова, ЛЭТИ, 2019 г.
             </p>
             <img id='1' className="object-image" src={brickBuildtPath} alt="" />
           </div>
@@ -39,20 +33,14 @@ const Objects = ({handlePopup}) => {
         <div className="objects__objects-bottom object">
           <div className="object__info" onClick={openPopup}>
             <p className="object__info-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis
-              tortor vitae pellentesque egestas quam pulvinar. Pellentesque
-              porttitor velit sit pellentesque. Suspendisse donec pretium id
-              dignissim.
+            Дворовая территория дома №45 по ул. Ленина, 2018 г.
             </p>
             <img id='2' className="object-image" src={whiteBuildPath} alt="" />
           </div>
           <div className="object-color blue"></div>
           <div className="object__info" onClick={openPopup}>
             <p className="object__info-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis
-              tortor vitae pellentesque egestas quam pulvinar. Pellentesque
-              porttitor velit sit pellentesque. Suspendisse donec pretium id
-              dignissim.
+            Дворовая территория дома №50 по Каменноостровскому проспекту, 2019 г.
             </p>
             <img id='3' className="object-image" src={brownBuildingPath} alt="" />
           </div>
