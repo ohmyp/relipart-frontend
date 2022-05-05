@@ -27,11 +27,13 @@ const News = () => {
     }, []);
 
     function openNewsPopup(post) {
+        document.querySelector('.body').classList.add('body_non-scroll')
         SetIsNewsPopupOpen(true)
         setSelectedPost(post)
     }
 
-    function closeAllPopups() {
+    function closePopup() {
+        document.querySelector('.body').classList.remove('body_non-scroll')
         SetIsNewsPopupOpen(false)
     }
 
@@ -40,7 +42,7 @@ const News = () => {
             <Header/>
             <NewsSection posts={posts} handlePopup={openNewsPopup} isLoading={isLoading}/>
             <Footer/>
-            <NewsPopup post={selectedPost} onClose={closeAllPopups} isOpen={isNewsPopupOpen}/>
+            <NewsPopup post={selectedPost} onClose={closePopup} isOpen={isNewsPopupOpen}/>
         </div>
     );
 };

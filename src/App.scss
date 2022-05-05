@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.body_non-scroll {
+  overflow: hidden;
+}
+
 html{
   scroll-behavior: smooth;
 }

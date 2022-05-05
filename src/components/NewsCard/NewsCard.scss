@@ -16,6 +16,7 @@
 }
 
 .news-card__container {
+  @include max-width;
   padding: 30px 0;
   margin: 0 auto;
   display: flex;
