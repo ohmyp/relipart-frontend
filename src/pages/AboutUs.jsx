@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer, History, AboutCompany, Mission, Managment } from "../components/components";
+import { Header, Footer, History, AboutCompany, Mission, Managment, GratitudeSlider } from "../components/components";
 const AboutUs = () => {
   return (
     <>
@@ -8,6 +8,7 @@ const AboutUs = () => {
       <History />
       <Mission />
       <Managment />
+      <GratitudeSlider />
       <Footer />
     </>
   );
