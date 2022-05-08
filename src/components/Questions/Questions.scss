@@ -2,25 +2,33 @@
 @import '../../vendor/mixins.scss';
 @import '../../vendor/constants.scss';
 
-.questions__outline{
-    margin: 60px 0;
-}
-.questions{
+.questions {
     @include max_width;
     text-align: center;
     margin: 0 auto;
-    padding: 30px 0
-}
-.questions__subtitle{
-    @include subtitle_font;
-}
-.questions__title{
-    @include title_font;
-}
-.questions__text{
-    @include text_font;   
-}
-.questions__outline{
-    border-top: 24px solid $orange;
-    border-bottom: 24px solid $orange;
+    padding: 30px 0;
+
+
+    &__subtitle {
+        @include subtitle_font;
+    }
+
+    &__title {
+        @include title_font;
+    }
+
+    &__text {
+        @include text_font;
+    }
+
+    &__outline {
+        border-top: 24px solid $orange;
+        border-bottom: 24px solid $orange;
+        margin: 60px 0;
+        @media (max-width: 768px) {
+            margin: 30px 0;
+            border-top: 12px solid $orange;
+            border-bottom: 12px solid $orange;
+        }
+    }
 }

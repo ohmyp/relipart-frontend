@@ -8,6 +8,18 @@
   line-height: 54px;
   margin: 10px 0 0 0;
   padding: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 10px 0 0 0;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 30px;
+    line-height: 34px;
+    margin: 10px 0 0 0;
+  }
 }
 
 @mixin subtitle-font {
@@ -18,6 +30,17 @@
   line-height: 44px;
   margin: 10px 0 0 0;
   padding: 0;
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 10px 0 0 0;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0 0 0;
+  }
 }
 
 @mixin text-font {
@@ -28,6 +51,14 @@
   line-height: 29px;
   margin: 10px 0 0 0;
   padding: 0;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media (max-width: 375px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 @mixin button-font{
@@ -36,6 +67,15 @@
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 @mixin text-bold{

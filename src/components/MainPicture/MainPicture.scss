@@ -1,30 +1,47 @@
 @import '../../vendor/mixins.scss';
-.mainPicture{
+
+.mainPicture {
   @include max_width;
   margin: 0 auto;
   margin-top: 53px;
   position: relative;
-}
 
-.mainPicture__logo{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  height: 200px;
-}
 
-.mainPicture__image{
-  width: 100%;
-  height: fit-content  
-}
+  &__logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 200px;
 
-.mainPicture__title{
-  @include text-bold;
-  margin: 0;
-  font-size: 40pt;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  text-align: right;
-  color: white;
+    @media (max-width: 768px) {
+      height: 100px;
+    }
+    @media (max-width: 375px) {
+      height: 80px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: fit-content
+  }
+
+  &__title {
+    @include text-bold;
+    margin: 0;
+    font-size: 40pt;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    color: white;
+
+    @media (max-width: 768px) {
+      font-size: 20pt;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 16pt;
+    }
+  }
 }

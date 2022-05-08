@@ -2,19 +2,34 @@
 @import '../../vendor/mixins.scss';
 
 
-.partners{
-    @include max_width;
-    text-align: center;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-.partners__subtitle{
+.partners {
+  @include max_width;
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px 0;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+
+  &__subtitle {
     @include subtitle_font;
-}
-.partners__title{
+  }
+
+  &__title {
     @include title_font;
-}
-.partners__images-image{
-    height: 200px;
-    margin: 15px 35px;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px ;
+
+    &-image {
+      width: 20%;
+
+    }
+  }
 }

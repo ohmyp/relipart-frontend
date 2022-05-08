@@ -18,12 +18,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__left, &__right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   &__right .footer__links-link {
@@ -32,6 +36,7 @@
 
   &__links {
     &-title {
+      width: 100%;
       text-transform: uppercase;
       border-bottom: 1px solid #000DD8;
       text-align: center;
@@ -41,7 +46,7 @@
       letter-spacing: 0.1em;
       color: #333333;
       margin: 10px 0;
-      padding: 10px 50px;
+      padding: 10px 0;
     }
 
     &-link {
@@ -64,6 +69,12 @@
     border-top: 1px solid #000DD8;
     margin-top: 50px;
     padding: 10px;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      align-items: center;
+      gap: 10px;
+      flex-direction: column;
+    }
 
     &-text {
       font-weight: 400;

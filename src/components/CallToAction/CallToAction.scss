@@ -51,6 +51,9 @@
     flex-direction: column;
     position: relative;
     z-index: 5;
+    @media (max-width: 768px) {
+      margin-top: 25px;
+    }
 
     &-input {
       width: 80%;
@@ -60,6 +63,10 @@
       padding: 10px;
       border: none;
       font-size: 16px;
+      @media (max-width: 768px) {
+        font-size: 12px;
+        margin: 5px auto;
+      }
     }
 
     &-button {
@@ -75,9 +82,16 @@
       letter-spacing: 0.1em;
       color: #404040;
       transition: .5s;
-      cursor: pointer;;
+      cursor: pointer;
       &:hover{
         background: rgba(255, 255, 255, 0.75);
+      }
+      @media (max-width: 768px) {
+        padding: 5px 20px;
+        margin: 10px auto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
       }
     }
 
