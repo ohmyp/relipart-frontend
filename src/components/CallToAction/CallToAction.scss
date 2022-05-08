@@ -15,7 +15,6 @@
   color: white;
 
   &::after {
-    @include max-width;
     position: absolute;
     content: "";
     left:0;
