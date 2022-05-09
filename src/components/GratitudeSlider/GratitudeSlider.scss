@@ -1,0 +1,52 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.gratitudes-slider{
+  @include max-width;
+  margin: 5% auto 0 auto;
+  
+  &__title{
+    @include title-font;
+    font-size: 30px;
+    margin: 20px auto;
+    width: 100%;
+    color: $orange;
+  }
+
+  &__subtitle{
+    @include text-normal;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 50%;
+    color: $blue;
+  }
+  
+  
+  &-card__img {
+    width: 60%;
+    border: 3px solid $orange;
+    margin: auto;
+  }
+  
+}
+
+.swiper {
+  margin-top: 5%;
+  width: 80%;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next::after{
+  font-weight: bold;
+  color: $orange;
+}
+
+.swiper-button-prev::after{
+  font-weight: bold;
+  color: $orange;
+}
+

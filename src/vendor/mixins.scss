@@ -1,18 +1,46 @@
 @import '../App.scss';
+@import './fonts.scss';
+
 @mixin title-font {
-  font-family: 'Tecla', Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Tecla Bold', Helvetica, sans-serif;
+  font-style: bold;
   font-size: 50px;
   line-height: 54px;
+  margin: 10px 0 0 0;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 10px 0 0 0;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 30px;
+    line-height: 34px;
+    margin: 10px 0 0 0;
+  }
 }
 
 @mixin subtitle-font {
   font-family: 'Tecla', Helvetica, sans-serif;;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 49px;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 10px 0 0 0;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0 0 0;
+  }
 }
 
 @mixin text-font {
@@ -21,12 +49,47 @@
   font-weight: 400;
   font-size: 21px;
   line-height: 29px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media (max-width: 375px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@mixin button-font{
+  font-family: 'Tecla Bold', Helvetica, sans-serif;;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin text-bold{
+  font-family: 'Tecla Bold', Helvetica, sans-serif;;
+  font-style: bold;
+}
+
+@mixin text-normal{
+  font-family: 'Tecla', Helvetica, sans-serif;;
+  font-style: normal;
 }
 
 @mixin max-width {
-  @media (max-width: 1440px) {
-    max-width: 1024px;
-  }
+  max-width: 1024px;
   
   @media (max-width: 1024px) {
     max-width: 768px;

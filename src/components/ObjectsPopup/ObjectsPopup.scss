@@ -1,0 +1,100 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: visibility 0.5s, opacity 0.5s;
+  z-index: 10;
+
+  &_open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 1%;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__image-block {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-subtitle {
+    @include subtitle-font;
+    color: black;
+    font-size: 17px;
+    line-height: 1.2;
+
+  }
+
+  &__text {
+    @include subtitle-font;
+    color: black;
+    width: 80%;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 auto 20px auto;
+  }
+
+  &__container {
+    border-radius: 30px;
+    max-width: 75vw;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    display: block;
+    position: relative;
+  }
+
+  &__exit-button {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__exit-button-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__exit-button:hover {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 520px) {
+  .popup__exit-button {
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    right: -5px;
+  }
+}

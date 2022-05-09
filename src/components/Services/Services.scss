@@ -1,6 +1,45 @@
 @import '../../vendor/mixins.scss';
-.services{
+@import '../../vendor/constants.scss';
+
+.services {
   @include max_width;
-  border: 1px solid red;
   margin: 0 auto;
+  text-align: center;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 375px) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    @include title-font;
+  }
+
+  &__subtitle {
+    @include subtitle-font;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-line {
+      background-color: $blue;
+      height: 10px;
+      width: 100%;
+    }
+  }
 }

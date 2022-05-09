@@ -1,0 +1,28 @@
+@import "../../index.scss";
+@import '../../vendor/mixins.scss';
+
+.mission{
+  @include max-width;
+  margin: 100px auto 0 auto;
+
+  &__title{
+    @include title-font;
+    font-size: 30px;
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    color: $orange;
+  }
+
+  &__text{
+    @include text-font;
+    color: $blue;
+    font-size: 20px;
+    text-align: center;
+    border-top: 7px solid $orange;
+    border-bottom: 7px solid $orange;
+    padding: 1% 5%;
+    margin: 0;
+    
+  }
+}

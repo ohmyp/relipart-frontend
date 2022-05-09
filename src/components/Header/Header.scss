@@ -1,6 +1,44 @@
 @import "../../index.scss";
 
-.header{
-    color: $orange;
-    @include title-font;
+.header {
+  @include text-bold;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: $orange;
+  background: $blue;
+  padding: 5px 0;
+  z-index: 10000;
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__links {
+    @include max-width;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+
+    &-link:not(:first-child) a {
+      border-bottom: 0 solid $orange;
+      text-decoration: none;
+      color: white;
+      padding: 6px 0;
+      transition: 0.1s;
+      -webkit-transition: 0.1s;
+      -moz-transition: 0.1s;
+      -ms-transition: 0.1s;
+      -o-transition: 0.1s;
+    }
+
+    &-link:not(:first-child).selected a,
+    &-link:not(:first-child) a:hover {
+      border-bottom: 2px solid $orange;
+    }
+  }
 }

@@ -1,0 +1,113 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.history{
+  @include max-width;
+  width: 100%;
+  border-radius: 5%;
+  height: 500px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../../static/beautifulest-picture-in-the-world.png);
+  background-position: center;
+  background-size: cover;
+
+  &__logo{
+    margin-top: 10%;
+    width: 227.5px;
+    height: 208 px;
+  }
+
+  &__left-container{
+    margin-left: 4%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__year{
+    @include title-font;
+    margin-top: 7%;
+    text-align: start;
+    font-size: 120px;
+    line-height: 125px;
+    color: $blue;
+  }
+
+  &__subtitle{
+    margin: 0;
+    @include text-bold;
+    text-align: start;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $orange;
+  }
+
+  
+  &__right-container{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__years-list {
+    width: 15%;
+    border-left: 2px solid $blue;
+    padding: 0 0 0 10px;
+    margin: 10% 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    @include text-normal;
+    font-size: 17px;
+    line-height: 1.2;
+    color: $blue;
+  }
+
+  &__years-item {
+    cursor: pointer;
+  }
+
+  &__years-item_active {
+    position: relative;
+    @include text-bold;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__years-item_active::after {
+    position: absolute;
+    left: -11px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(0 0, 0% 100%, 100% 52%);
+    background: $blue;
+    content: "";
+  }
+
+}
+
+.state{
+  margin: 10% 0;
+  width: 85%;
+
+  &__title{
+    @include text-bold;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $blue;
+    margin: 5% 2%;
+  }
+
+  &__text{
+    @include text-bold;
+    font-size: 17px;
+    line-height: 1.2;
+    color: $orange;
+    margin: 0 5%;
+  }
+}
