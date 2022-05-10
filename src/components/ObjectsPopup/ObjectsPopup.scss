@@ -14,6 +14,7 @@
   display: flex;
   transition: visibility 0.5s, opacity 0.5s;
   z-index: 10;
+  overflow-y: scroll;
 
   &_open {
     visibility: visible;
@@ -42,7 +43,6 @@
     color: black;
     font-size: 17px;
     line-height: 1.2;
-
   }
 
   &__text {
@@ -58,7 +58,7 @@
     border-radius: 30px;
     max-width: 75vw;
     background-color: white;
-    width: 50%;
+    width: 70%;
     margin: auto;
     display: block;
     position: relative;
@@ -94,7 +94,35 @@
   .popup__exit-button {
     width: 20px;
     height: 20px;
-    top: -30px;
+    top: -20px;
     right: -5px;
+  }
+
+  .popup__container {
+    max-width: 85vw;
+    width: 85%;
+    max-height: 80vh;
+  }
+  .popup__image-block{
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .popup__images {
+    flex-direction: column;
+  }
+
+  .popup__img-subtitle {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .popup__text {
+    padding-right: 10px;
+    max-height: 20vh;
+    overflow-y: scroll;
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0 auto 20px auto;
   }
 }

@@ -53,13 +53,13 @@
 }
 
 .popup__title {
-    @include title-font;
-    text-align: center;
-    color: black;
-    width: 80%;
-    font-size: 22px;
-    line-height: 25px;
-    margin: 20px auto 10px auto;
+  @include title-font;
+  text-align: center;
+  color: black;
+  width: 80%;
+  font-size: 22px;
+  line-height: 25px;
+  margin: 20px auto 10px auto;
 }
 
 .popup__text {
@@ -92,5 +92,19 @@
     height: 20px;
     top: -30px;
     right: -5px;
+  }
+  .popup__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .popup__text {
+    font-size: 15px;
+    line-height: 1.2px;
+  }
+
+  .popup__subtitle {
+    font-size: 15px;
+    line-height: 1.2;
   }
 }

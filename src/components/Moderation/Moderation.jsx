@@ -8,10 +8,9 @@ const Moderation = () => {
     const baseUrl = "https://respawn-spb.ru"
 
     useEffect(() => {
-        api.getCardsData()
+        api.getCardsData(-1)
             .then(res => {
                 setPosts(res)
-                console.log(res)
             })
             .catch(e => console.log(e))
     }, [])

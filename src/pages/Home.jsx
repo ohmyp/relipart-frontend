@@ -52,7 +52,7 @@ const Home = () => {
 
   function openObjectsPopup(objectId) {
     document.querySelector('.body').classList.add('body_non-scroll')
-    SetIsObjectsPopupOpen(true);
+    SetIsObjectsPopupOpen(true);  
     setSelectedObject(objectsData[objectId]);
   }
 

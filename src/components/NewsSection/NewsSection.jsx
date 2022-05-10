@@ -4,14 +4,10 @@ import { NewsCard, Loading } from "../components";
 
 import arrowPath from "../../static/arrow.svg";
 
-const News = ({ posts, handlePopup, isLoading }) => {
-  const [currentPost, setCurrentPost] = React.useState(6);
+const News = ({ posts, handlePopup, isLoading, currentPost, setCurrentPost }) => {
 
   function handleNumberOfposts() {
-    setCurrentPost(currentPost + 4);
-    if( currentPost + 4 >= posts.length ){
-      document.querySelector('.news-section__button').disabled=true;
-    }
+    setCurrentPost(currentPost + 5);
   }
 
   function handlePopupOpen (post){
@@ -22,11 +18,7 @@ const News = ({ posts, handlePopup, isLoading }) => {
     <section className="news-section">
       <h2 className="news-section__title">Новости</h2>
       {isLoading ? <Loading/> : posts.map((post) => {
-        return post.id < currentPost ? (
-          <NewsCard key={post.id} post={post} handlePopupOpen={handlePopupOpen}/>
-        ) : (
-          ""
-        );
+           return <NewsCard key={post.id} post={post} handlePopupOpen={handlePopupOpen}/>
       })}
       <button className="news-section__button">
         <img

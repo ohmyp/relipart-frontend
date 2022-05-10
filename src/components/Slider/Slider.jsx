@@ -32,57 +32,73 @@ const Slider = ({}) => {
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={landscapePath} />
-            <p className="slider-card__title">Ландшафтная архитектура</p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">Ландшафтная архитектура</p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={documentationPath} />
-            <p className="slider-card__title">
-              Разработка сметной документации
-            </p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">
+                Разработка сметной документации
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={meliorationPath} />
-            <p className="slider-card__title">Мелиорация ландшафтов</p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">Мелиорация ландшафтов</p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={engineeringPath} />
-            <p className="slider-card__title">
-              Инженерная подготовка территорий
-            </p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">
+                Инженерная подготовка территорий
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={buildingPath} />
-            <p className="slider-card__title">Техническое обследование строительных конструкций</p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">
+                Техническое обследование строительных конструкций
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={foundamentPath} />
-            <p className="slider-card__title">
-              Усиление фундаментов
-            </p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">Усиление фундаментов</p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={smallHousePath} />
-            <p className="slider-card__title">Малоэтажное загородное строительство</p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">
+                Малоэтажное загородное строительство
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-card">
             <img className="slider-card__img" src={flatsPath} />
-            <p className="slider-card__title">
-              Перепланировка квартир  
-            </p>
+            <div className="slider-card__title-wrapper">
+              <p className="slider-card__title">Перепланировка квартир</p>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>

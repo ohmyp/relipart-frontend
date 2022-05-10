@@ -150,3 +150,38 @@
     }
   }
 }
+
+@media screen and (max-width: 630px) {
+  .managment__info-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .quote {
+    margin: 50px auto 0 auto;
+    width: 90%;
+  }
+
+  .manager {
+    width: 100%;
+    margin: 0;
+  
+    &__name {
+      @include text-bold;
+      font-size: 20px;
+      position: relative;
+      margin: 10px auto;
+      width: 100%;
+      color: $orange;
+    }
+  
+    &__position {
+      @include text-normal;
+      font-size: 20px;
+      position: relative;
+      margin: 10px auto;
+      width: 100%;
+      color: $orange;
+    }
+  }
+}

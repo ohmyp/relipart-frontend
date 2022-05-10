@@ -12,19 +12,23 @@ const News = () => {
     const [selectedPost, setSelectedPost] = React.useState({});
     const [isNewsPopupOpen, SetIsNewsPopupOpen] = React.useState(false);
     const [isLoading, setIsLoading] = React.useState(false);
+    const [currentPost, setCurrentPost] = React.useState(0);
 
     React.useEffect(() => {
         setIsLoading(true)
         api
-            .getCardsData()
+            .getCardsData(currentPost)
             .then((data) => {
-                setPosts(data);
+                if (data.length < 5){
+                    document.querySelector('.news-section__button').disabled = true;
+                }
+                setPosts([...posts, ...data]);
                 setIsLoading(false)
             })
             .catch((err) => {
                 console.log(err);
             });
-    }, []);
+    },[currentPost]);
 
     function openNewsPopup(post) {
         document.querySelector('.body').classList.add('body_non-scroll')
@@ -40,7 +44,7 @@ const News = () => {
     return (
         <div className="news">
             <Header/>
-            <NewsSection posts={posts} handlePopup={openNewsPopup} isLoading={isLoading}/>
+            <NewsSection posts={posts} handlePopup={openNewsPopup} currentPost={currentPost} setCurrentPost={setCurrentPost} isLoading={isLoading}/>
             <Footer/>
             <NewsPopup post={selectedPost} onClose={closePopup} isOpen={isNewsPopupOpen}/>
         </div>

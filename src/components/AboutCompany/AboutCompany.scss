@@ -30,3 +30,21 @@
     color: $blue;
   }
 }
+
+@media (max-width: 520px) {
+  .about-company{
+    &__title{
+      margin-left: 15px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    
+    &__title::after{
+      width:  70px;
+      height: 3px;
+      border-bottom: 4px solid $blue;
+      top: 15px;
+      left: 190px;
+    }
+  }
+}

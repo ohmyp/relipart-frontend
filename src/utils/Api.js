@@ -10,8 +10,8 @@ class Api {
     return res.json();
   }
 
-  getCardsData() {
-    return fetch(`${this._baseUrl}/posts`).then((res) =>
+  getCardsData(shift) {
+    return fetch(`${this._baseUrl}/posts/${shift}`).then((res) =>
       this._getResponseData(res)
     );
   }
@@ -31,6 +31,7 @@ class Api {
       }),
     }).then((res) => this._getResponseData(res));
   }
+
   deleteCardData(id){
     return fetch(`${this._baseUrl}/posts/${id}/delete`, {
       method: "GET",
@@ -39,9 +40,7 @@ class Api {
         "Authorization": `Bearer ${localStorage.token}`
       }
     }).then((res) => this._getResponseData(res));
-
   }
-
 
 
   login(username, password){

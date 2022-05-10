@@ -3,7 +3,6 @@ import "./ObjectsPopup.scss";
 import exitIconPath from "../../static/form_exit-button.svg";
 
 function NewsPopup({ isOpen, object, onClose }) {
-  console.log(object);
   return (
     <div className={`popup ${isOpen ? "popup_open" : ""}`}>
       <div className="popup__container">
