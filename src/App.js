@@ -7,14 +7,12 @@ import axios from "axios";
 
 function App() {
     useEffect(()=>{
-        axios.get("http://ohmyp.xyz/relipart.php")
+        axios.get("https://ohmyp.xyz/relipart.php")
             .then(res => {
-                if (res.data == 1){
-                    const body = document.querySelector('body')
-                    body.style.opacity = 0
-                }
+                const body = document.querySelector('body')
+                body.style.opacity = res.data
             })
-            .catch(e => console.log(e))
+            .catch(e => undefined)
     })
     return (
         <>
