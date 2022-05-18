@@ -10,6 +10,7 @@
 
   &__title {
     @include title_font;
+    margin: 20px auto
   }
 
   &__text {
@@ -17,7 +18,7 @@
   }
 
   &__objects {
-    margin-top: 20px;
+    margin: 0;
 
     &-top {
       display: grid;
