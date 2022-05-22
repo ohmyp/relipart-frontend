@@ -14,16 +14,16 @@ const Footer = () => {
                     <div className="footer__links">
                         <div className="footer__links-link">
                             <img src={phonePath} alt=""/>
-                            <a href="">+7 (952) 363-07-29</a>
+                            <a href="tel:79523630729">+7 (952) 363-07-29</a>
 
                         </div>
                         <div className="footer__links-link">
                             <img src={mailPath} alt=""/>
-                            <a href="">send@relipart.ru</a>
+                            <a href="mailto:send@relipart.ru">send@relipart.ru</a>
                         </div>
                         <div className="footer__links-link">
                             <img src={mailPath} alt=""/>
-                            <a href="">relipart@relipart.ru</a>
+                            <a href="mailto:relipart@relipart.ru">relipart@relipart.ru</a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className="footer__links">
                         <div className="footer__links-link">
                             <img src={zenPath} alt=""/>
-                            <a href="https://zen.yandex.ru/profile/editor/krugozor_proekt">Яндекс.Дзен «Кругозор Проектировщика»</a>
+                            <a target='_blank' href="https://zen.yandex.ru/profile/editor/krugozor_proekt">Яндекс.Дзен «Кругозор Проектировщика»</a>
                         </div>
                     </div>
                 </div>
